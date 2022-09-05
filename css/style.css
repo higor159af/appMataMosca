@@ -1,0 +1,53 @@
+html{
+    cursor: url('../img/mata_mosca.png') 30 30, auto;
+}
+
+body{
+    background: url('../img/bg.jpg') no-repeat left top fixed;
+    background-size: cover;
+}
+.mosca1{
+    width: 50px;
+    height: 50px;
+}
+.mosca2{
+    width: 70px;
+    height: 70px;
+}
+.mosca3{
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+}
+.ladoB{
+    transform: scaleX(-1);
+}
+
+.painel{
+    background: #fff;
+    border-top: 1px solid #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    padding: 10px;
+    position: absolute;
+    width: 190px;
+}
+
+.vidas,.cronometro{
+    float: left;
+}
+
+.cronometro{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .imagemresponsiva{
+    width: 80%;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/mosca.png" type="image/x-icon">
+    <script src="js/script.js"></script>
+</head>
+<body onresize="ajustaPalco()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="img/coracao_cheio.png" alt="coração-cheio">
+            <img id="v2" src="img/coracao_cheio.png" alt="coração-cheio">
+            <img id="v3" src="img/coracao_cheio.png" alt="coração-cheio">
+        </div>
+        <div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+    </div>
+    
+    <script>
+        posicaorandomica()
+
+        
+        document.getElementById('cronometro').innerHTML = tempo
+
+        var criamosca = setInterval(() => {
+            posicaorandomica()
+        },criamoscatempo)
+    </script>
+</body>
+</html>
